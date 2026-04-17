@@ -4,10 +4,11 @@ import { createRoot } from "react-dom/client";
 // ── Video data ──────────────────────────────────────────────────────────────
 const VIDEOS = [
   { id: "F_Ae4IZWbXM", title: "Behind the Sun", meta: "Latest Release · 2024" },
+  { id: "Oz4y0VEtkDM", title: "Alive on Fire", meta: "Original Version" },
   { id: "Yc9AXWy8Ckg", title: "Alive on Fire", meta: "Max Maxwell Remix · No.1 SoundCloud NZ Charts 2024" },
   { id: "O9VfBAGyVf4", title: "Cosmic Energy", meta: "with Jeramiah Ross & Duncan McCann" },
   { id: "nE1-to038-M", title: "Silent Tribe", meta: "with Jeramiah Ross" },
-  { id: "M6NPM9E3pFY", title: "Houghton Bay", meta: "Single · 2024" },
+  { id: "m11hTwWnwsA", title: "Houghton Bay", meta: "Single · 2024" },
   { id: "-KGwDrZgQlo", title: "Design the Sky", meta: "Latest Release" },
   { id: "3a5JXTtinUE", title: "Full Moon Risin'", meta: "The Studio Sessions" },
 ];
