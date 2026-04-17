@@ -3,6 +3,7 @@ import { createRoot } from "react-dom/client";
 
 // ── Video data ──────────────────────────────────────────────────────────────
 const VIDEOS = [
+  { id: "F_Ae4IZWbXM", title: "Behind the Sun", meta: "Latest Release · 2024" },
   { id: "Yc9AXWy8Ckg", title: "Alive on Fire", meta: "Max Maxwell Remix · No.1 SoundCloud NZ Charts 2024" },
   { id: "O9VfBAGyVf4", title: "Cosmic Energy", meta: "with Jeramiah Ross & Duncan McCann" },
   { id: "nE1-to038-M", title: "Silent Tribe", meta: "with Jeramiah Ross" },
