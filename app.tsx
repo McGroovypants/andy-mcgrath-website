@@ -274,7 +274,7 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="footer-logo"><McG prefix="Andy" /></div>
-      <div className="footer-tagline">Modern Nostalgia · Wellington, New Zealand</div>
+      <div className="footer-tagline">Modern Nostalgia · Te Whanganui-a-Tara / Wellington</div>
       <div className="footer-links">
         <a href="#home">Home</a>
         <a href="#videos">Videos</a>
@@ -284,7 +284,7 @@ function Footer() {
         <a href="https://andymcgrath.bandcamp.com" target="_blank" rel="noopener noreferrer">Bandcamp</a>
         <a href="https://open.spotify.com/user/director.andy1" target="_blank" rel="noopener noreferrer">Spotify</a>
       </div>
-      <div className="footer-copy">© {new Date().getFullYear()} <McG prefix="Andy" /> · Wellington, New Zealand</div>
+      <div className="footer-copy">© {new Date().getFullYear()} <McG prefix="Andy" /> · Te Whanganui-a-Tara / Wellington</div>
     </footer>
   );
 }
