@@ -622,6 +622,8 @@ body {
   font-weight: 900;
   color: var(--gold);
   margin-bottom: 0.5rem;
+  white-space: nowrap;
+  display: inline-block;
 }
 
 .footer-tagline {
