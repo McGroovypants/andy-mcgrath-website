@@ -179,16 +179,19 @@ function Story() {
               Born into an Irish family in Wellington where singing was the soundtrack to life, Andy entered and won his first singing competition at The annual Fies, Irish Festival whilst barely at school. At intermediate he learned violin, but the first time he sat behind a drum kit, rock music called him away and never gave him back.
             </p>
             <p>
-              The first gig on the drums was at The Awapuni Tavern, where a few friends got to together and learnt the song, Burn by Deep Purple.
+              The first gig on the drums was at The Awapuni Tavern, where a few friends got together and learnt the song, Burn by Deep Purple.
             </p>
             <p>
               At 19, Andy joined established songwriter <strong>Robert Thirtle</strong> — active in the Manawatu indie scene with bands like Cement Garden — along with bass player <strong>Kane Haitana</strong> to form <strong>The Carousers</strong>. The trio had several gigs, starting at The opening night of The Stomach, and impressed Meltdown Records owner, <strong>Pete Shephard</strong> enough to pay for the recordings of an EP. Unfortunately the money ran out before the songs were released and when Thirtle left for London, Andy picked up the guitar and started writing.
             </p>
             <p>
-              At the time of the '91 Rugby World Cup, Andy recorded C'mon All Blacks with local guitarist, <strong>Simon Bowden</strong>, in the short-lived band, Andy &amp; the Sprigs which earned a spot on the nationwide RNZ network. Everything was going swimmingly until The All Blacks lost in the World Cup. Putting sports songs aside but wanting to perform more, he formed <strong>BDI's</strong>, spending three years as front man and guitarist, gigging across the North Island, reaching the finals of Battle of the Bands in Wanganui — sharing a bill, unknowingly at the time, with future bandmate <strong>Tony Kemp</strong> on drums.
+              At the time of the '91 Rugby World Cup, Andy recorded C'mon All Blacks with local guitarist, <strong>Simon Bowden</strong>, in the short-lived band, Andy &amp; the Sprigs which earned a spot on the nationwide RNZ network. Everything was going swimmingly until The All Blacks lost in the World Cup. Putting sports songs aside but wanting to perform more, he formed <strong>BDI's</strong>, spending three years as front man and guitarist, reaching the finals of Battle of the Bands in Wanganui — sharing a bill, unknowingly at the time, with future bandmate <strong>Tony Kemp</strong> on drums.
             </p>
             <p>
               After time with family, Andy composed soundtracks for NZ documentaries and TV series including Motorway Patrol and SCU (Serious Crash Unit) for Greenstone Pictures and TVNZ.
+            </p>
+            <p>
+              During the 2019 stay-at-home period, Andy teamed up with <strong>Tony Kemp</strong> (drummer for The Relatives) and <strong>Duncan McCann</strong> (of Cherry Bomb) to form <strong>The MacTones</strong>. Working remotely, they collaborated on a series of virtual recording sessions that brought several of Andy's songs to life, highlighted by the release of the standout single <em>Geronimo</em>.
             </p>
             <p>
               In recent years, Andy has enjoyed being a solo artist, although sometimes gigging with friends <strong>Jeramiah Ross</strong> and <strong>Duncan McCann</strong> in local Wellington bars, Underworld Tavern, Morsa loca and more recently, The Vogelmorn Upstairs Bar.
