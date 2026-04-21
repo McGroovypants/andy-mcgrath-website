@@ -214,7 +214,7 @@ function Story() {
             </div>
             <div className="highlight-card">
               <div className="highlight-year">TV &amp; Film Composition</div>
-              <div className="highlight-text">Soundtracks for Motorway Patrol and SCU (Serious Crash Unit), Greenstone Pictures. Directed music videos for Stylus, Zed, Savage, Head Like a Hole, and more. Concert director for Kanye West.</div>
+              <div className="highlight-text">Soundtracks for Motorway Patrol and SCU, Greenstone Pictures. Directed/edited music videos for Stylus, Rubicon, Zed, Mareko, Head Like a Hole, and many more. Big screen director for Kanye West concerts in NZ.</div>
             </div>
             <div className="highlight-card">
               <div className="highlight-year">2024 — No.1</div>
