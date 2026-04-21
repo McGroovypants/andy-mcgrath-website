@@ -173,40 +173,25 @@ function Story() {
         <div className="story-layout">
           <div className="story-text">
             <p>
-              <strong><McG prefix="Andy" /></strong> is a Wellington-based singer-songwriter whose modern-nostalgia sound is rooted
-              in classic Kiwi music traditions. A versatile multi-instrumentalist and vocalist, Andy weaves together
-              indie, rock, and blues influences with a contemporary edge — equally at home on a small stage or a
-              festival field.
+              <strong><McG prefix="Andy" /></strong> is a Wellington-based singer-songwriter whose modern-nostalgia sound is rooted in classic Kiwi music traditions. A versatile multi-instrumentalist and vocalist, Andy weaves together indie, rock, and blues influences with a contemporary edge — equally at home on a small stage or a festival field.
             </p>
             <p>
-              Born into an Irish family in Wellington where singing was the soundtrack to life, Andy entered and won
-              his first singing competition at The Annual Irish Festival while barely at school. At intermediate he
-              learned violin, but the first time he sat behind a drum kit, rock music called him away and never
-              gave him back.
+              Born into an Irish family in Wellington where singing was the soundtrack to life, Andy entered and won his first singing competition at The Annual Irish Festival whilst barely at school. At intermediate he learned violin, but the first time he sat behind a drum kit, rock music called him away and never gave him back.
             </p>
             <p>
-              At 19, Andy joined established songwriter <strong>Robert Thirtle</strong> — active in the Manawatu
-              indie scene with bands like Cement Garden — along with bass player <strong>Kane Haitana</strong> to
-              form <strong>The Carousers</strong>. The trio moved fast, securing an EP deal with Meltdown Records
-              before the label folded. When Thirtle left for London, Andy picked up the guitar and started writing.
+              The first gig on the drums was at the Awapuni Tavern, where a few friends got together and learnt the song, Burn by Deep Purple.
             </p>
             <p>
-              At the time of the '91 Rugby World Cup, Andy recorded C'mon All Blacks, which earned airtime
-              on the National Radio Network — enough to inspire his next band, <strong>Andy &amp; the Sprigs</strong>.
-              Wanting to perform more, he formed <strong>BDI's</strong>, spending three years as front man and
-              guitarist across the North Island, reaching the finals of Battle of the Bands in Wanganui — sharing
-              a bill, unknowingly at the time, with future bandmate <strong>Tony Kemp</strong> on drums.
+              At 19, Andy joined established songwriter <strong>Robert Thirtle</strong> — active in the Manawatu indie scene with bands like Cement Garden — along with bass player <strong>Kane Haitana</strong> to form <strong>The Carousers</strong>. The trio had several gigs, starting at the opening night of The Sombrero, and impressed Meltdown Records owner, <strong>Pete Shepherd</strong> enough to lay for the recordings of an EP. Unfortunately the money ran out before the recordings were released and when Thirtle left for London, Andy picked up the guitar and started writing.
             </p>
             <p>
-              After time with family, Andy composed soundtracks for NZ documentaries and TV series including
-              Motorway Patrol and SCU (Serious Crash Unit) for Greenstone Pictures.
-              He then threw himself back into live music, eventually finding his current home with
-              <strong> The MacTones</strong>, where he plays guitar, harmonica, and shares lead vocals.
+              At the time of the '91 Rugby World Cup, Andy recorded C'mon All Blacks with local studios. Andy &amp; the Sprigs which earned a spot on the nationwide RNZ network. Everything was going swimmingly until The All Blacks lost in the World Cup. Wanting to perform more, he formed <strong>BDI's</strong>, spending three years as front man and guitarist, reaching across the North Island, reaching the finals of Battle of the Bands in Wanganui — sharing a bill, unknowingly at the time, with future bandmate <strong>Tony Kemp</strong> on drums.
             </p>
             <p>
-              In 2024, Alive on Fire — remixed by <strong>Max Maxwell</strong> — reached <strong>No.1
-              on the SoundCloud NZ Charts</strong>. The milestone felt right for an artist who has spent a lifetime
-              lighting up rooms.
+              After time with family, Andy composed soundtracks for NZ documentaries and TV series including Motorway Patrol and SCU (Serious Crash Unit) for Greenstone Pictures and TVNZ.
+            </p>
+            <p>
+              Apart from gigging, Andy is happiest in the studio, collaborating with different artists including <strong>Jeramiah Ross</strong> (Module) where they have worked tirelessly to produce great songs and a powerful signature sound. Andy has also collaborated with the legendary <strong>BDI's</strong> producer. They have collaborated several songs to date and in 2024, Max remixed <em>Alive on Fire</em> which reached No.1 on the SoundCloud NZ Charts. The production milestone felt right for an artist who has spent a lifetime lighting up the room.
             </p>
           </div>
 
@@ -237,7 +222,7 @@ function Story() {
             </div>
             <div className="highlight-card">
               <div className="highlight-year">Now — The MacTones &amp; Solo</div>
-              <div className="highlight-text">Performing and recording as a solo artist and as singer-songwriter for The MacTones. Collaborating with Max Maxwell, Jeramiah Ross (Module), and others.</div>
+              <div className="highlight-text">Performing and recording as a solo artist and singer-songwriter. Collaborating with Max Maxwell, Jeramiah Ross (Module), Campbell Burns, Steve Asplin (Captain Relaxo) and others.</div>
             </div>
           </div>
         </div>
