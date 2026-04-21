@@ -176,22 +176,25 @@ function Story() {
               <strong><McG prefix="Andy" /></strong> is a Wellington-based singer-songwriter whose modern-nostalgia sound is rooted in classic Kiwi music traditions. A versatile multi-instrumentalist and vocalist, Andy weaves together indie, rock, and blues influences with a contemporary edge — equally at home on a small stage or a festival field.
             </p>
             <p>
-              Born into an Irish family in Wellington where singing was the soundtrack to life, Andy entered and won his first singing competition at The Annual Irish Festival whilst barely at school. At intermediate he learned violin, but the first time he sat behind a drum kit, rock music called him away and never gave him back.
+              Born into an Irish family in Wellington where singing was the soundtrack to life, Andy entered and won his first singing competition at The annual Fies, Irish Festival whilst barely at school. At intermediate he learned violin, but the first time he sat behind a drum kit, rock music called him away and never gave him back.
             </p>
             <p>
-              The first gig on the drums was at the Awapuni Tavern, where a few friends got together and learnt the song, Burn by Deep Purple.
+              The first gig on the drums was at The Awapuni Tavern, where a few friends got to together and learnt the song, Burn by Deep Purple.
             </p>
             <p>
-              At 19, Andy joined established songwriter <strong>Robert Thirtle</strong> — active in the Manawatu indie scene with bands like Cement Garden — along with bass player <strong>Kane Haitana</strong> to form <strong>The Carousers</strong>. The trio had several gigs, starting at the opening night of The Sombrero, and impressed Meltdown Records owner, <strong>Pete Shepherd</strong> enough to lay for the recordings of an EP. Unfortunately the money ran out before the recordings were released and when Thirtle left for London, Andy picked up the guitar and started writing.
+              At 19, Andy joined established songwriter <strong>Robert Thirtle</strong> — active in the Manawatu indie scene with bands like Cement Garden — along with bass player <strong>Kane Haitana</strong> to form <strong>The Carousers</strong>. The trio had several gigs, starting at The opening night of The Stomach, and impressed Meltdown Records owner, <strong>Pete Shephard</strong> enough to pay for the recordings of an EP. Unfortunately the money ran out before the songs were released and when Thirtle left for London, Andy picked up the guitar and started writing.
             </p>
             <p>
-              At the time of the '91 Rugby World Cup, Andy recorded C'mon All Blacks with local studios. Andy &amp; the Sprigs which earned a spot on the nationwide RNZ network. Everything was going swimmingly until The All Blacks lost in the World Cup. Wanting to perform more, he formed <strong>BDI's</strong>, spending three years as front man and guitarist, reaching across the North Island, reaching the finals of Battle of the Bands in Wanganui — sharing a bill, unknowingly at the time, with future bandmate <strong>Tony Kemp</strong> on drums.
+              At the time of the '91 Rugby World Cup, Andy recorded C'mon All Blacks with local guitarist, <strong>Simon Bowden</strong>, in the short-lived band, Andy &amp; the Sprigs which earned a spot on the nationwide RNZ network. Everything was going swimmingly until The All Blacks lost in the World Cup. Putting sports songs aside but wanting to perform more, he formed <strong>BDI's</strong>, spending three years as front man and guitarist, gigging across the North Island, reaching the finals of Battle of the Bands in Wanganui — sharing a bill, unknowingly at the time, with future bandmate <strong>Tony Kemp</strong> on drums.
             </p>
             <p>
               After time with family, Andy composed soundtracks for NZ documentaries and TV series including Motorway Patrol and SCU (Serious Crash Unit) for Greenstone Pictures and TVNZ.
             </p>
             <p>
-              Apart from gigging, Andy is happiest in the studio, collaborating with different artists including <strong>Jeramiah Ross</strong> (Module) where they have worked tirelessly to produce great songs and a powerful signature sound. Andy has also collaborated with the legendary <strong>BDI's</strong> producer. They have collaborated several songs to date and in 2024, Max remixed <em>Alive on Fire</em> which reached No.1 on the SoundCloud NZ Charts. The production milestone felt right for an artist who has spent a lifetime lighting up the room.
+              In recent years, Andy has enjoyed being a solo artist, although sometimes gigging with friends <strong>Jeramiah Ross</strong> and <strong>Duncan McCann</strong> in local Wellington bars, Underworld Tavern, Morsa loca and more recently, The Vogelmorn Upstairs Bar.
+            </p>
+            <p>
+              Apart from gigging, Andy is happiest in the studio, collaborating with different artists including <strong>Jeramiah Ross</strong> (aka Module) where they have worked tirelessly to produce great songs and a powerful signature sound. Andy has also collaborated with the legendary EDM Producer, <strong>Max Maxwell</strong>. They have collaborated on several songs to date and in 2024, Max remixed <em>Alive on Fire</em> which reached No.1 on the SoundCloud NZ Charts. The milestone felt right for an artist who has spent a lifetime lighting up the room.
             </p>
           </div>
 
