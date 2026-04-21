@@ -191,7 +191,7 @@ function Story() {
               After time with family, Andy composed soundtracks for NZ documentaries and TV series including Motorway Patrol and SCU (Serious Crash Unit) for Greenstone Pictures and TVNZ.
             </p>
             <p>
-              In recent years, Andy has enjoyed being a solo artist, although sometimes gigging with friends <strong>Jeramiah Ross</strong> and <strong>Duncan McCann</strong> in local Wellington bars, Underworld Tavern, Morsa loca and more recently, The Vogelmann Upstairs Bar.
+              Apart from gigging, Andy is happiest in the studio, collaborating with different artists including <strong>Jeramiah Ross</strong> (Module) where they have worked tirelessly to produce great songs and a powerful signature sound. Andy has also collaborated with the legendary <strong>BDI's</strong> producer. They have collaborated several songs to date and in 2024, Max remixed <em>Alive on Fire</em> which reached No.1 on the SoundCloud NZ Charts. The production milestone felt right for an artist who has spent a lifetime lighting up the room.
             </p>
           </div>
 
