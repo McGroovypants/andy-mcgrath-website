@@ -105,7 +105,7 @@ function Videos() {
         <div className="section-label">Music Videos</div>
         <h2 className="section-title">Watch &amp; Listen</h2>
         <p className="section-subtitle">
-          Six tracks from the studio and the stage — each one a story from a life lived in music.
+          Tracks from the studio and stage — each one a story from life lived in music.
         </p>
         <div className="milestone">
           <span className="milestone-dot" />
