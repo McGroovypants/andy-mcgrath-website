@@ -177,6 +177,28 @@ body {
   position: relative;
 }
 
+.hero-intro {
+  font-size: 0.95rem;
+  line-height: 1.85;
+  color: var(--cream-muted);
+  margin-bottom: 2rem;
+  font-weight: 300;
+  max-width: 700px;
+}
+
+.hero-intro p {
+  margin-bottom: 1.25rem;
+}
+
+.hero-intro p:last-child {
+  margin-bottom: 0;
+}
+
+.hero-intro strong {
+  color: var(--cream);
+  font-weight: 500;
+}
+
 .hero-cta {
   display: flex;
   gap: 1rem;
@@ -507,6 +529,16 @@ body {
   color: var(--gold);
   text-transform: uppercase;
   margin-bottom: 0.25rem;
+  margin: 0;
+  padding: 0;
+}
+
+h3.highlight-year {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.68rem;
+  font-weight: 600;
+  margin: 0 0 0.25rem 0;
+  padding: 0;
 }
 
 .highlight-text {
