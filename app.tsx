@@ -345,10 +345,10 @@ function App() {
     <div>
       <Nav />
       <Hero />
+      <Signup />
       <Videos />
       <Story />
       <Listen />
-      <Signup />
       <Footer />
     </div>
   );
