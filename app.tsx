@@ -272,7 +272,7 @@ const ACOUSTIC_PICKS = [
 const COLLABS = [
   {
     title: "Secret Underground",
-    credit: "with Max Maxwell",
+    credit: "Andy McGrath/Max Maxwell",
     type: "soundcloud",
     embedId: "2198324599",
   },
