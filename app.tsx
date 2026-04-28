@@ -265,28 +265,11 @@ function Listen() {
 
 // ── Signup ──────────────────────────────────────────────────────────────────
 function Signup() {
-  const [status, setStatus] = useState<"idle" | "sending" | "done" | "error">("idle");
+  const [done, setDone] = useState(false);
 
-  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
-    e.preventDefault();
-    setStatus("sending");
-    const form = e.currentTarget;
-    const data = new FormData(form);
-    try {
-      const res = await fetch("https://formspree.io/f/xeevbrow", {
-        method: "POST",
-        body: data,
-        headers: { Accept: "application/json" },
-      });
-      if (res.ok) {
-        setStatus("done");
-        form.reset();
-      } else {
-        setStatus("error");
-      }
-    } catch {
-      setStatus("error");
-    }
+  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    // Let the form submit to Mailchimp in a hidden iframe, show our own success message
+    setDone(true);
   }
 
   return (
@@ -295,34 +278,42 @@ function Signup() {
         <div className="section-label">Stay Connected</div>
         <h2 className="section-title">Stay in the Loop</h2>
         <p className="section-subtitle">
-          New music, videos, and the occasional gig. No spam — just the good stuff. Check out the new site — and sign up if you want to know when the next track drops.
+          New music, videos, and the occasional gig. No spam — just the good stuff. Sign up if you want to know when the next track drops.
         </p>
-        {status === "done" ? (
+        {done ? (
           <p className="signup-thanks">You're in. Thanks — Andy will be in touch when the next track drops. 🎸</p>
         ) : (
-          <form className="signup-form" onSubmit={handleSubmit}>
+          <form
+            className="signup-form"
+            action="https://andymcgrathmusic.us1.list-manage.com/subscribe/post?u=b3670fc4f8eb33686a3459659&id=9c8e7ff08d&f_id=002fe6e5f0"
+            method="post"
+            target="mc_hidden_frame"
+            onSubmit={handleSubmit}
+          >
             <input
               type="text"
-              name="name"
+              name="FNAME"
               placeholder="Your name"
-              required
               className="signup-input"
             />
             <input
               type="email"
-              name="email"
+              name="EMAIL"
               placeholder="Your email"
               required
               className="signup-input"
             />
-            <button type="submit" className="signup-btn" disabled={status === "sending"}>
-              {status === "sending" ? "Sending..." : "Sign Me Up"}
+            {/* Mailchimp anti-spam honeypot — must stay hidden */}
+            <div style={{ position: "absolute", left: "-5000px" }} aria-hidden="true">
+              <input type="text" name="b_b3670fc4f8eb33686a3459659_9c8e7ff08d" tabIndex={-1} defaultValue="" />
+            </div>
+            <button type="submit" className="signup-btn">
+              Sign Me Up
             </button>
-            {status === "error" && (
-              <p className="signup-error">Something went wrong — try again or email andymcgrathmusicnz@gmail.com</p>
-            )}
           </form>
         )}
+        {/* Hidden iframe absorbs the Mailchimp redirect */}
+        <iframe name="mc_hidden_frame" style={{ display: "none" }} title="mc_hidden_frame" />
       </div>
     </section>
   );
