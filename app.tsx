@@ -239,6 +239,45 @@ function Story() {
 }
 
 // ── Listen ─────────────────────────────────────────────────────────────────
+const ACOUSTIC_PICKS = [
+  { title: "Alive on Fire",   id: "1994665218" },
+  { title: "Houghton Bay",    id: "3446405935" },
+  { title: "Full Moon Risin'", id: "111662596" },
+];
+
+const COLLABS = [
+  {
+    title: "Secret Underground",
+    credit: "with Max Maxwell",
+    type: "spotify",
+    embedId: "3WkPaUCee4ZtDV4zkABkB0",
+  },
+  {
+    title: "Alive on Fire",
+    credit: "Max Maxwell Remix · No.1 SoundCloud NZ 2024",
+    type: "soundcloud",
+    embedId: "1601425545",
+  },
+  {
+    title: "Behind the Sun",
+    credit: "Music Video",
+    type: "youtube",
+    embedId: "F_Ae4IZWbXM",
+  },
+  {
+    title: "Escaping the Moment",
+    credit: "with Max Maxwell",
+    type: "soundcloud",
+    embedId: "1834198521",
+  },
+  {
+    title: "Koloko Jack",
+    credit: "with Max Maxwell",
+    type: "spotify",
+    embedId: "7MTM2dd5Trfxfbt0P8N7vj",
+  },
+];
+
 function Listen() {
   return (
     <section className="section listen-section" id="listen">
@@ -248,6 +287,80 @@ function Listen() {
         <p className="section-subtitle">
           Available on all major platforms. Grab a download, stream a track, or just hit play and see what lights you up.
         </p>
+
+        {/* ── Acoustic Favourites ── */}
+        <div className="listen-subsection">
+          <h3 className="listen-subheading">Acoustic Favourites</h3>
+          <p className="listen-subdesc">Three picks — each one close to Andy's heart.</p>
+          <div className="listen-tracks">
+            {ACOUSTIC_PICKS.map((track) => (
+              <div key={track.id} className="listen-track">
+                <div className="listen-track-label"><em>{track.title}</em></div>
+                <iframe
+                  title={track.title}
+                  style={{ border: 0, width: "100%", height: "120px", display: "block" }}
+                  src={`https://bandcamp.com/EmbeddedPlayer/track=${track.id}/size=large/bgcol=0c0a07/linkcol=c8922a/tracklist=false/artwork=small/transparent=true/`}
+                  seamless
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* ── The Studio Sessions ── */}
+        <div className="listen-subsection">
+          <h3 className="listen-subheading">The Studio Sessions</h3>
+          <p className="listen-subdesc">Eight tracks. The full collection.</p>
+          <iframe
+            title="The Studio Sessions"
+            style={{ border: 0, width: "100%", height: "400px", display: "block" }}
+            src="https://bandcamp.com/EmbeddedPlayer/album=1406120189/size=large/bgcol=0c0a07/linkcol=c8922a/tracklist=true/artwork=small/transparent=true/"
+            seamless
+          />
+        </div>
+
+        {/* ── Collaborations ── */}
+        <div className="listen-subsection">
+          <h3 className="listen-subheading">Collaborations</h3>
+          <div className="listen-collabs">
+            {COLLABS.map((c) => (
+              <div key={c.embedId} className="listen-collab">
+                <div className="listen-collab-label">
+                  <em>{c.title}</em><span>{c.credit}</span>
+                </div>
+                {c.type === "spotify" && (
+                  <iframe
+                    title={c.title}
+                    src={`https://open.spotify.com/embed/track/${c.embedId}`}
+                    style={{ border: 0, width: "100%", height: "80px", display: "block", borderRadius: "8px" }}
+                    allow="encrypted-media"
+                  />
+                )}
+                {c.type === "soundcloud" && (
+                  <iframe
+                    title={c.title}
+                    style={{ border: 0, width: "100%", height: "166px", display: "block" }}
+                    src={`https://w.soundcloud.com/player/?url=https%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F${c.embedId}&color=%23c8922a&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false`}
+                  />
+                )}
+                {c.type === "youtube" && (
+                  <div className="listen-small-video">
+                    <iframe
+                      title={c.title}
+                      src={`https://www.youtube.com/embed/${c.embedId}`}
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                      style={{ border: 0 }}
+                    />
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* ── Platform icons ── */}
+        <p className="listen-platforms-heading">Find more on your favourite platform</p>
         <div className="listen-grid">
           {PLATFORMS.map((p) => (
             <a key={p.name} href={p.url} target="_blank" rel="noopener noreferrer" className="listen-card">
