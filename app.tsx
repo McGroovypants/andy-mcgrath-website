@@ -265,11 +265,52 @@ function Listen() {
 
 // ── Signup ──────────────────────────────────────────────────────────────────
 function Signup() {
-  const [done, setDone] = useState(false);
+  const [status, setStatus] = useState<"idle" | "sending" | "done" | "error">("idle");
+  const [fname, setFname] = useState("");
+  const [email, setEmail] = useState("");
 
-  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
-    // Let the form submit to Mailchimp in a hidden iframe, show our own success message
-    setDone(true);
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    setStatus("sending");
+    try {
+      const params = new URLSearchParams({
+        EMAIL: email,
+        FNAME: fname,
+        "b_b3670fc4f8eb33686a3459659_9c8e7ff08d": "", // honeypot
+      });
+      // Mailchimp JSONP endpoint (avoids CORS)
+      const url =
+        "https://andymcgrathmusic.us1.list-manage.com/subscribe/post-json?u=b3670fc4f8eb33686a3459659&id=9c8e7ff08d&f_id=002fe6e5f0&" +
+        params.toString() +
+        "&c=__mailchimpCallback";
+
+      await new Promise<void>((resolve, reject) => {
+        const callbackName = "__mailchimpCallback";
+        (window as any)[callbackName] = (data: any) => {
+          delete (window as any)[callbackName];
+          script.remove();
+          if (data.result === "success") {
+            resolve();
+          } else {
+            // "already subscribed" is still fine
+            if (data.msg && data.msg.toLowerCase().includes("already subscribed")) {
+              resolve();
+            } else {
+              reject(new Error(data.msg || "Subscription failed"));
+            }
+          }
+        };
+        const script = document.createElement("script");
+        script.src = url;
+        script.onerror = () => { script.remove(); reject(new Error("Network error")); };
+        document.body.appendChild(script);
+      });
+
+      setStatus("done");
+    } catch (err) {
+      console.error(err);
+      setStatus("error");
+    }
   }
 
   return (
@@ -280,40 +321,35 @@ function Signup() {
         <p className="section-subtitle">
           New music, videos, and the occasional gig. No spam — just the good stuff. Sign up if you want to know when the next track drops.
         </p>
-        {done ? (
+        {status === "done" ? (
           <p className="signup-thanks">You're in. Thanks — Andy will be in touch when the next track drops. 🎸</p>
         ) : (
-          <form
-            className="signup-form"
-            action="https://andymcgrathmusic.us1.list-manage.com/subscribe/post?u=b3670fc4f8eb33686a3459659&id=9c8e7ff08d&f_id=002fe6e5f0"
-            method="post"
-            target="mc_hidden_frame"
-            onSubmit={handleSubmit}
-          >
+          <form className="signup-form" onSubmit={handleSubmit}>
             <input
               type="text"
-              name="FNAME"
               placeholder="Your name"
               className="signup-input"
+              value={fname}
+              onChange={e => setFname(e.target.value)}
             />
             <input
               type="email"
-              name="EMAIL"
               placeholder="Your email"
               required
               className="signup-input"
+              value={email}
+              onChange={e => setEmail(e.target.value)}
             />
-            {/* Mailchimp anti-spam honeypot — must stay hidden */}
-            <div style={{ position: "absolute", left: "-5000px" }} aria-hidden="true">
-              <input type="text" name="b_b3670fc4f8eb33686a3459659_9c8e7ff08d" tabIndex={-1} defaultValue="" />
-            </div>
-            <button type="submit" className="signup-btn">
-              Sign Me Up
+            <button type="submit" className="signup-btn" disabled={status === "sending"}>
+              {status === "sending" ? "Sending…" : "Sign Me Up"}
             </button>
+            {status === "error" && (
+              <p style={{ color: "#e57373", marginTop: "0.75rem", fontSize: "0.9rem" }}>
+                Something went wrong — please try again or email andymcgrathmusicnz@gmail.com
+              </p>
+            )}
           </form>
         )}
-        {/* Hidden iframe absorbs the Mailchimp redirect */}
-        <iframe name="mc_hidden_frame" style={{ display: "none" }} title="mc_hidden_frame" />
       </div>
     </section>
   );
