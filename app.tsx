@@ -29,7 +29,7 @@ const PLATFORMS = [
   {
     name: "Bandcamp",
     url: "https://andymcgrath.bandcamp.com",
-    desc: "Buy & stream on Bandcamp",
+    desc: "Stream free on Bandcamp",
     color: "#1DA0C3",
     icon: (
       <svg viewBox="0 0 24 24" width="28" height="28" fill="#1DA0C3">
@@ -282,10 +282,10 @@ function Listen() {
   return (
     <section className="section listen-section" id="listen">
       <div className="section-inner">
-        <div className="section-label">Stream &amp; Buy</div>
+        <div className="section-label">Stream Free</div>
         <h2 className="section-title">Find the Music</h2>
         <p className="section-subtitle">
-          Available on all major platforms. Grab a download, stream a track, or just hit play and see what lights you up.
+          Available on all major platforms. Hit play and see what lights you up.
         </p>
 
         {/* ── Acoustic Favourites ── */}
@@ -435,7 +435,7 @@ function Signup() {
           New music, videos, and the occasional gig. No spam — just the good stuff. Sign up if you want to know when the next track drops.
         </p>
         {status === "done" ? (
-          <p className="signup-thanks">You're in. Thanks — Andy will be in touch when the next track drops. 🎸</p>
+          <p className="signup-thanks">Great! — Will be in touch when a fresh track arrives. 🎸</p>
         ) : (
           <form className="signup-form" onSubmit={handleSubmit}>
             <input
