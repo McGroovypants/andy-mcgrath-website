@@ -69,6 +69,7 @@ function Nav() {
         <li><a href="#videos">Videos</a></li>
         <li><a href="#story">Story</a></li>
         <li><a href="#listen">Listen</a></li>
+        <li><a href="#signup">Sign Up</a></li>
       </ul>
     </nav>
   );
@@ -262,6 +263,71 @@ function Listen() {
   );
 }
 
+// ── Signup ──────────────────────────────────────────────────────────────────
+function Signup() {
+  const [status, setStatus] = useState<"idle" | "sending" | "done" | "error">("idle");
+
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    setStatus("sending");
+    const form = e.currentTarget;
+    const data = new FormData(form);
+    try {
+      const res = await fetch("https://formspree.io/f/xeevbrow", {
+        method: "POST",
+        body: data,
+        headers: { Accept: "application/json" },
+      });
+      if (res.ok) {
+        setStatus("done");
+        form.reset();
+      } else {
+        setStatus("error");
+      }
+    } catch {
+      setStatus("error");
+    }
+  }
+
+  return (
+    <section className="section signup-section" id="signup">
+      <div className="section-inner signup-inner">
+        <div className="section-label">Stay Connected</div>
+        <h2 className="section-title">Stay in the Loop</h2>
+        <p className="section-subtitle">
+          New music, videos, and the occasional gig. No spam — just the good stuff. Check out the new site — and sign up if you want to know when the next track drops.
+        </p>
+        {status === "done" ? (
+          <p className="signup-thanks">You're in. Thanks — Andy will be in touch when the next track drops. 🎸</p>
+        ) : (
+          <form className="signup-form" onSubmit={handleSubmit}>
+            <input
+              type="text"
+              name="name"
+              placeholder="Your name"
+              required
+              className="signup-input"
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your email"
+              required
+              className="signup-input"
+            />
+            <button type="submit" className="signup-btn" disabled={status === "sending"}>
+              {status === "sending" ? "Sending..." : "Sign Me Up"}
+            </button>
+            {status === "error" && (
+              <p className="signup-error">Something went wrong — try again or email andymcgrathmusicnz@gmail.com</p>
+            )}
+          </form>
+        )}
+      </div>
+    </section>
+  );
+}
+
 // ── Footer ─────────────────────────────────────────────────────────────────
 function Footer() {
   return (
@@ -291,6 +357,7 @@ function App() {
       <Videos />
       <Story />
       <Listen />
+      <Signup />
       <Footer />
     </div>
   );
