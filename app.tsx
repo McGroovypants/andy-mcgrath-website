@@ -50,6 +50,24 @@ const PLATFORMS = [
   },
 ];
 
+// ── Shows data ──────────────────────────────────────────────────────────────
+const PAST_SHOWS = [
+  { date: "15 Mar 2024", venue: "Boneface Tavern", location: "Te Whanganui-a-Tara / Wellington", show: "Andy McGrath & Guests" },
+  { date: "12 Aug 2024", venue: "Boneface Tavern", location: "Te Whanganui-a-Tara / Wellington", show: "Cosmic Energy Tour Launch" },
+  { date: "30 May 2025", venue: "Abandoned Tap Room", location: "Petone", show: "Blues Night with Dynamite Blues Train" },
+  { date: "27 Jul 2025", venue: "Underworld Tavern, Mt Victoria", location: "Te Whanganui-a-Tara / Wellington", show: "Support for Dynamite Blues Train" },
+  { date: "1 Feb 2026", venue: "Vogelmorn Upstairs", location: "Te Whanganui-a-Tara / Wellington", show: "Solo Show" },
+];
+
+const GIG_IMAGES = [
+  "/gig-1.jpg",
+  "/gig-2.jpg",
+  "/gig-3.jpg",
+  "/gig-4.jpg",
+  "/gig-5.jpg",
+  "/gig-6.jpg",
+];
+
 // ── McGrath typography helper ───────────────────────────────────────────────
 function McG({ prefix }: { prefix?: string }) {
   return <>{prefix ? `${prefix} ` : ""}M<span className="mc-raised">c</span>Grath</>;
@@ -69,6 +87,8 @@ function Nav() {
         <li><a href="#videos">Videos</a></li>
         <li><a href="#story">Story</a></li>
         <li><a href="#listen">Listen</a></li>
+        <li><a href="#shows">Shows</a></li>
+        <li><a href="#contact">Contact</a></li>
         <li><a href="#signup">Sign Up</a></li>
       </ul>
     </nav>
@@ -108,56 +128,60 @@ function Videos() {
         <p className="section-subtitle">
           Tracks from the studio and stage — each one a story from life lived in music.
         </p>
-        <div className="milestone">
-          <span className="milestone-dot" />
-          Alive on Fire · No.1 on SoundCloud NZ Charts · 2024
-        </div>
         <div className="videos-grid">
-          {VIDEOS.map((v) =>
-            active === v.id ? (
-              <div key={v.id} className="video-card active">
-                <div className="video-embed">
-                  <iframe
-                    src={`https://www.youtube.com/embed/${v.id}?autoplay=1`}
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                    title={v.title}
-                  />
+          {VIDEOS.map((v) => (
+            <React.Fragment key={v.id}>
+              {v.id === "Yc9AXWy8Ckg" && (
+                <div className="milestone milestone-grid-span">
+                  <span className="milestone-dot" />
+                  Alive on Fire · No.1 on SoundCloud NZ Charts · 2024
                 </div>
-                <div className="video-info">
-                  <div className="video-title">{v.title}</div>
-                  <div className="video-meta">{v.meta}</div>
-                  <button
-                    className="btn-outline"
-                    style={{ marginTop: "0.75rem", fontSize: "0.7rem", padding: "0.5rem 1rem" }}
-                    onClick={() => setActive(null)}
-                  >
-                    ✕ Close
-                  </button>
-                </div>
-              </div>
-            ) : (
-              <div key={v.id} className="video-card" onClick={() => setActive(v.id)}>
-                <div className="video-thumb">
-                  <img
-                    src={`https://img.youtube.com/vi/${v.id}/mqdefault.jpg`}
-                    alt={v.title}
-                  />
-                  <div className="play-btn">
-                    <div className="play-icon">
-                      <svg viewBox="0 0 24 24">
-                        <path d="M8 5v14l11-7z" />
-                      </svg>
-                    </div>
+              )}
+              {active === v.id ? (
+                <div className="video-card active">
+                  <div className="video-embed">
+                    <iframe
+                      src={`https://www.youtube.com/embed/${v.id}?autoplay=1`}
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                      title={v.title}
+                    />
+                  </div>
+                  <div className="video-info">
+                    <div className="video-title">{v.title}</div>
+                    <div className="video-meta">{v.meta}</div>
+                    <button
+                      className="btn-outline"
+                      style={{ marginTop: "0.75rem", fontSize: "0.7rem", padding: "0.5rem 1rem" }}
+                      onClick={() => setActive(null)}
+                    >
+                      ✕ Close
+                    </button>
                   </div>
                 </div>
-                <div className="video-info">
-                  <div className="video-title">{v.title}</div>
-                  <div className="video-meta">{v.meta}</div>
+              ) : (
+                <div className="video-card" onClick={() => setActive(v.id)}>
+                  <div className="video-thumb">
+                    <img
+                      src={`https://img.youtube.com/vi/${v.id}/mqdefault.jpg`}
+                      alt={v.title}
+                    />
+                    <div className="play-btn">
+                      <div className="play-icon">
+                        <svg viewBox="0 0 24 24">
+                          <path d="M8 5v14l11-7z" />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="video-info">
+                    <div className="video-title">{v.title}</div>
+                    <div className="video-meta">{v.meta}</div>
+                  </div>
                 </div>
-              </div>
-            )
-          )}
+              )}
+            </React.Fragment>
+          ))}
         </div>
       </div>
     </section>
@@ -468,6 +492,103 @@ function Signup() {
   );
 }
 
+// ── Shows ───────────────────────────────────────────────────────────────────
+function Shows() {
+  return (
+    <section className="section shows-section" id="shows">
+      <div className="section-inner">
+        <div className="section-label">Live Shows</div>
+        <h2 className="section-title">On Stage</h2>
+        <p className="section-subtitle">
+          Andy brings the songs to life — solo guitar looping, or a full band when the night calls for it.
+        </p>
+
+        {/* Film strip */}
+        <div className="filmstrip-wrap">
+          <div className="filmstrip">
+            {GIG_IMAGES.map((src, i) => (
+              <div key={i} className="filmstrip-frame">
+                <img src={src} alt={`Show ${i + 1}`} />
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Past shows */}
+        <h3 className="shows-subheading">Recent Shows</h3>
+        <div className="shows-list">
+          {PAST_SHOWS.map((s, i) => (
+            <div key={i} className="show-row">
+              <div className="show-date">{s.date}</div>
+              <div className="show-details">
+                <div className="show-venue">{s.venue}</div>
+                <div className="show-location">{s.location}</div>
+                <div className="show-name">{s.show}</div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Coming soon */}
+        <div className="shows-coming-soon">
+          <div className="coming-soon-label">Next Show</div>
+          <div className="coming-soon-text">Coming Soon — stay in the loop for announcements.</div>
+        </div>
+
+        {/* Book button */}
+        <div style={{ textAlign: "center", marginTop: "2.5rem" }}>
+          <a
+            href="mailto:andymcgrathmusicnz@gmail.com?subject=Booking%20Enquiry%20-%20Andy%20McGrath"
+            className="btn-primary"
+          >
+            Book Andy McGrath
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+// ── Contact ─────────────────────────────────────────────────────────────────
+function Contact() {
+  return (
+    <section className="section contact-section" id="contact">
+      <div className="section-inner">
+        <div className="section-label">Get in Touch</div>
+        <h2 className="section-title">Contact Andy</h2>
+
+        <div className="contact-layout">
+          <div className="contact-photo">
+            <img src="/contact-andy.jpg" alt="Andy McGrath at the drums" />
+          </div>
+          <div className="contact-text">
+            <p>
+              Andy McGrath is a multi-instrumentalist, songwriter, and performer with a deep love for music in all its forms. He plays guitar, bass, drums, and harmonica, and brings years of experience as a vocalist and voice-over artist.
+            </p>
+            <p>
+              Andy has engineered and recorded his own music, mixed a large catalogue of songs, and in 2025 mixed an album for Te Whanganui-a-Tara / Wellington blues band The Blues Train.
+            </p>
+            <p>
+              As a solo performer, Andy delivers a dynamic guitar-looping show that fills a room on its own — and when the occasion calls for it, he knows exactly who to call to put together a special night with a full band.
+            </p>
+            <p>
+              Whether you are looking to book a show, explore a collaboration, or simply make something great together — Andy would love to hear from you. 🎸
+            </p>
+            <div style={{ marginTop: "2rem" }}>
+              <a
+                href="mailto:andymcgrathmusicnz@gmail.com?subject=Hello%20-%20Andy%20McGrath%20Music"
+                className="btn-primary"
+              >
+                Book Andy McGrath
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 // ── Footer ─────────────────────────────────────────────────────────────────
 function Footer() {
   return (
@@ -479,6 +600,8 @@ function Footer() {
         <a href="#videos">Videos</a>
         <a href="#story">Story</a>
         <a href="#listen">Listen</a>
+        <a href="#shows">Shows</a>
+        <a href="#contact">Contact</a>
         <a href="https://www.youtube.com/@Andy_McGrath" target="_blank" rel="noopener noreferrer">YouTube</a>
         <a href="https://andymcgrath.bandcamp.com" target="_blank" rel="noopener noreferrer">Bandcamp</a>
         <a href="https://open.spotify.com/artist/6ULF32IlSw97G7ZjxEOGAm" target="_blank" rel="noopener noreferrer">Spotify</a>
@@ -498,6 +621,8 @@ function App() {
       <Videos />
       <Story />
       <Listen />
+      <Shows />
+      <Contact />
       <Footer />
     </div>
   );
