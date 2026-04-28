@@ -17,7 +17,7 @@ const VIDEOS = [
 const PLATFORMS = [
   {
     name: "Spotify",
-    url: "https://open.spotify.com/user/director.andy1",
+    url: "https://open.spotify.com/artist/6ULF32IlSw97G7ZjxEOGAm",
     desc: "Stream on Spotify",
     color: "#1DB954",
     icon: (
@@ -332,7 +332,7 @@ function Footer() {
         <a href="#listen">Listen</a>
         <a href="https://www.youtube.com/@Andy_McGrath" target="_blank" rel="noopener noreferrer">YouTube</a>
         <a href="https://andymcgrath.bandcamp.com" target="_blank" rel="noopener noreferrer">Bandcamp</a>
-        <a href="https://open.spotify.com/user/director.andy1" target="_blank" rel="noopener noreferrer">Spotify</a>
+        <a href="https://open.spotify.com/artist/6ULF32IlSw97G7ZjxEOGAm" target="_blank" rel="noopener noreferrer">Spotify</a>
       </div>
       <div className="footer-copy">© {new Date().getFullYear()} <McG prefix="Andy" /> · Te Whanganui-a-Tara / Wellington</div>
     </footer>
