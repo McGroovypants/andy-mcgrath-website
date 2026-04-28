@@ -52,11 +52,11 @@ const PLATFORMS = [
 
 // ── Shows data ──────────────────────────────────────────────────────────────
 const PAST_SHOWS = [
-  { date: "15 Mar 2024", venue: "Boneface Tavern", location: "Te Whanganui-a-Tara / Wellington", show: "Andy McGrath & Guests" },
-  { date: "12 Aug 2024", venue: "Boneface Tavern", location: "Te Whanganui-a-Tara / Wellington", show: "Cosmic Energy Tour Launch" },
-  { date: "30 May 2025", venue: "Abandoned Tap Room", location: "Petone", show: "Blues Night with Dynamite Blues Train" },
-  { date: "27 Jul 2025", venue: "Underworld Tavern, Mt Victoria", location: "Te Whanganui-a-Tara / Wellington", show: "Support for Dynamite Blues Train" },
   { date: "1 Feb 2026", venue: "Vogelmorn Upstairs", location: "Te Whanganui-a-Tara / Wellington", show: "Solo Show" },
+  { date: "27 Jul 2025", venue: "Underworld Tavern, Mt Victoria", location: "Te Whanganui-a-Tara / Wellington", show: "Support for Dynamite Blues Train" },
+  { date: "30 May 2025", venue: "Abandoned Tap Room", location: "Petone", show: "Blues Night with Dynamite Blues Train" },
+  { date: "12 Aug 2024", venue: "Boneface Tavern", location: "Te Whanganui-a-Tara / Wellington", show: "Cosmic Energy Tour Launch" },
+  { date: "15 Mar 2024", venue: "Boneface Tavern", location: "Te Whanganui-a-Tara / Wellington", show: "Andy McGrath, Jeramiah Ross & Duncan McCann" },
 ];
 
 const GIG_IMAGES = [
@@ -503,7 +503,14 @@ function Shows() {
           Andy brings the songs to life — solo guitar looping, or a full band when the night calls for it.
         </p>
 
+        {/* Coming soon */}
+        <div className="shows-coming-soon" style={{ marginBottom: "2.5rem" }}>
+          <div className="coming-soon-label">Next Show</div>
+          <div className="coming-soon-text">Coming Soon — stay in the loop for announcements.</div>
+        </div>
+
         {/* Film strip */}
+        <h3 className="shows-subheading">Recent Shows</h3>
         <div className="filmstrip-wrap">
           <div className="filmstrip">
             {GIG_IMAGES.map((src, i) => (
@@ -515,7 +522,6 @@ function Shows() {
         </div>
 
         {/* Past shows */}
-        <h3 className="shows-subheading">Recent Shows</h3>
         <div className="shows-list">
           {PAST_SHOWS.map((s, i) => (
             <div key={i} className="show-row">
@@ -527,12 +533,6 @@ function Shows() {
               </div>
             </div>
           ))}
-        </div>
-
-        {/* Coming soon */}
-        <div className="shows-coming-soon">
-          <div className="coming-soon-label">Next Show</div>
-          <div className="coming-soon-text">Coming Soon — stay in the loop for announcements.</div>
         </div>
 
         {/* Book button */}
