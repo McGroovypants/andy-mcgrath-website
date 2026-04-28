@@ -273,8 +273,8 @@ const COLLABS = [
   {
     title: "Secret Underground",
     credit: "with Max Maxwell",
-    type: "spotify",
-    embedId: "3WkPaUCee4ZtDV4zkABkB0",
+    type: "soundcloud",
+    embedId: "2198324599",
   },
   {
     title: "Alive on Fire",
@@ -566,7 +566,7 @@ function Contact() {
               Andy McGrath is a multi-instrumentalist, songwriter, and performer with a deep love for music in all its forms. He plays guitar, bass, drums, and harmonica, and brings years of experience as a vocalist and voice-over artist.
             </p>
             <p>
-              Andy has engineered and recorded his own music, mixed a large catalogue of songs, and in 2025 mixed an album for Te Whanganui-a-Tara / Wellington blues band The Blues Train.
+              Andy has engineered and recorded his own music, mixed a large catalogue of songs, and in 2025 mixed an album for Te Whanganui-a-Tara / Wellington band Dynamite Blues Train.
             </p>
             <p>
               As a solo performer, Andy delivers a dynamic guitar-looping show that fills a room on its own — and when the occasion calls for it, he knows exactly who to call to put together a special night with a full band.
