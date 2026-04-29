@@ -272,31 +272,31 @@ const ACOUSTIC_PICKS = [
 const COLLABS = [
   {
     title: "Secret Underground",
-    credit: "Andy McGrath/Max Maxwell",
+    credit: "Andy McGrath / Max Maxwell",
     type: "soundcloud",
     embedId: "2198324599",
   },
   {
     title: "Alive on Fire",
-    credit: "Max Maxwell Remix · No.1 SoundCloud NZ 2024",
+    credit: "Andy McGrath / Max Maxwell — No.1 SoundCloud NZ 2024",
     type: "soundcloud",
     embedId: "1601425545",
   },
   {
     title: "Behind the Sun",
-    credit: "Music Video",
+    credit: "Andy McGrath — Music Video",
     type: "youtube",
     embedId: "F_Ae4IZWbXM",
   },
   {
     title: "Escaping the Moment",
-    credit: "with Max Maxwell",
+    credit: "Andy McGrath / Max Maxwell",
     type: "soundcloud",
     embedId: "1834198521",
   },
   {
     title: "Koloko Jack",
-    credit: "with Max Maxwell",
+    credit: "Andy McGrath / Max Maxwell",
     type: "spotify",
     embedId: "7MTM2dd5Trfxfbt0P8N7vj",
   },

@@ -830,7 +830,7 @@ h3.highlight-year {
 
 .listen-collab-label {
   color: var(--cream-muted);
-  font-size: 0.8rem;
+  font-size: 1rem;
   letter-spacing: 0.04em;
 }
 
@@ -842,7 +842,7 @@ h3.highlight-year {
 
 .listen-collab-label span {
   color: var(--muted);
-  font-size: 0.75rem;
+  font-size: 0.9rem;
 }
 
 .listen-small-video {
