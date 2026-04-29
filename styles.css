@@ -554,8 +554,10 @@ h3.highlight-year {
 
 .listen-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
+  max-width: 640px;
+  margin: 0 auto;
 }
 
 .listen-card {
@@ -884,22 +886,27 @@ h3.highlight-year {
 /* Film strip */
 .filmstrip-wrap {
   overflow-x: auto;
-  margin: 0 -1rem 3rem;
-  padding: 0 1rem;
+  -webkit-overflow-scrolling: touch;
+  margin: 0 0 3rem;
+  padding: 0 0 0.5rem;
   scrollbar-width: thin;
   scrollbar-color: var(--gold) transparent;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .filmstrip {
   display: flex;
   gap: 0.75rem;
-  width: max-content;
+  flex-wrap: nowrap;
   padding: 0.5rem 0 1rem;
+  width: max-content;
+  min-width: 100%;
 }
 
 .filmstrip-frame {
-  width: 200px;
-  height: 150px;
+  width: 160px;
+  height: 120px;
   overflow: hidden;
   border-radius: 4px;
   border: 2px solid rgba(200, 146, 42, 0.25);

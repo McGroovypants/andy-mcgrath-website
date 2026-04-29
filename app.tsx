@@ -50,7 +50,7 @@ const PLATFORMS = [
   },
   {
     name: "Instagram",
-    url: "https://www.threads.com/@andymcgrath_music?xmt=AQF0NH8hVxzTSzLXOsv8NvZVB5mYYVzGgSq64VTG7EByb-w",
+    url: "https://www.instagram.com/andymcgrath_music/",
     desc: "Follow on Instagram",
     color: "#E1306C",
     icon: (
