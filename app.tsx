@@ -360,7 +360,7 @@ function Listen() {
                 <iframe
                   title={track.title}
                   style={{ border: 0, width: "100%", height: "120px", display: "block" }}
-                  src={`https://bandcamp.com/EmbeddedPlayer/track=${track.id}/size=large/bgcol=0c0a07/linkcol=c8922a/tracklist=false/artwork=small/transparent=true/`}
+                  src={`https://bandcamp.com/EmbeddedPlayer/track=${track.id}/size=large/bgcol=0c0a07/linkcol=c8922a/tracklist=false/artwork=small/`}
                   seamless
                 />
               </div>
@@ -375,7 +375,7 @@ function Listen() {
           <iframe
             title="The Studio Sessions"
             style={{ border: 0, width: "100%", height: "400px", display: "block" }}
-            src="https://bandcamp.com/EmbeddedPlayer/album=1406120189/size=large/bgcol=0c0a07/linkcol=c8922a/tracklist=true/artwork=small/transparent=true/"
+            src="https://bandcamp.com/EmbeddedPlayer/album=1406120189/size=large/bgcol=0c0a07/linkcol=c8922a/tracklist=true/artwork=small/"
             seamless
           />
         </div>
