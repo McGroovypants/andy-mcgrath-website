@@ -562,6 +562,7 @@ body {
   }
   .hamburger {
     display: flex;
+    margin-left: auto;
   }
   .videos-grid {
     grid-template-columns: 1fr;
