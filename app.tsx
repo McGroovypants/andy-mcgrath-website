@@ -96,11 +96,13 @@ function McG({ prefix }: { prefix?: string }) {
 // ── Nav ────────────────────────────────────────────────────────────────────
 function Nav() {
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
   useEffect(() => {
     const handler = () => setScrolled(window.scrollY > 60);
     window.addEventListener("scroll", handler);
     return () => window.removeEventListener("scroll", handler);
   }, []);
+  const closeMenu = () => setMenuOpen(false);
   return (
     <nav className={`nav${scrolled ? " scrolled" : ""}`}>
       <ul className="nav-links">
@@ -111,6 +113,21 @@ function Nav() {
         <li><a href="#contact">Contact</a></li>
         <li><a href="#signup">Sign Up</a></li>
       </ul>
+      <button className={`hamburger${menuOpen ? " open" : ""}`} onClick={() => setMenuOpen(o => !o)} aria-label="Menu">
+        <span /><span /><span />
+      </button>
+      {menuOpen && (
+        <div className="mobile-menu">
+          <ul>
+            <li><a href="#videos" onClick={closeMenu}>Videos</a></li>
+            <li><a href="#story" onClick={closeMenu}>Story</a></li>
+            <li><a href="#listen" onClick={closeMenu}>Listen</a></li>
+            <li><a href="#shows" onClick={closeMenu}>Shows</a></li>
+            <li><a href="#contact" onClick={closeMenu}>Contact</a></li>
+            <li><a href="#signup" onClick={closeMenu}>Sign Up</a></li>
+          </ul>
+        </div>
+      )}
     </nav>
   );
 }
