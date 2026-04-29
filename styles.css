@@ -463,6 +463,10 @@ body {
   .hero {
     padding: 8rem 2rem 4rem;
   }
+
+  .hero-bg {
+    background-position: 75% 20%;
+  }
   
   .hero > *:not(.hero-bg):not(.hero-scroll) {
     max-width: 85vw;
