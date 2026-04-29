@@ -1003,6 +1003,15 @@ h3.highlight-year {
   margin-bottom: 0.5rem;
 }
 
+.loop-link {
+  color: var(--gold);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.loop-link:hover {
+  opacity: 0.8;
+}
+
 .coming-soon-text {
   color: var(--cream-muted);
   font-size: 0.95rem;
