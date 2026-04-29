@@ -882,6 +882,11 @@ h3.highlight-year {
   gap: 0.35rem;
 }
 
+.listen-track iframe,
+.listen-subsection > iframe {
+  background: #0c0a07;
+}
+
 .listen-track-label {
   color: var(--cream-muted);
   font-size: 0.8rem;
